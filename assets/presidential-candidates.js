@@ -1,4 +1,4 @@
-var site_url = 'http://localhost/sqliteci/';
+var site_url = 'http://localhost/PHP-Voting-System/';
 
 $(document).on('click','#add-pres-cand',function(){
 

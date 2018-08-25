@@ -118,7 +118,7 @@ class Home_model extends CI_Model {
 		
 
 
-		if(sizeof($president!==0)){
+		if(is_array($president)){
 
 			$pres_batchdata = array();
 
@@ -135,7 +135,7 @@ class Home_model extends CI_Model {
 		}
 
 
-		if(sizeof($vice_president!==0)){
+		if(is_array($vice_president)){
 
 			$vp_pres_batchdata = array();
 
@@ -151,7 +151,7 @@ class Home_model extends CI_Model {
 		 	
 		}
 
-		if(sizeof($senators>=1)){
+		if(is_array($senators)){
 
 				$sen_batchdata = array();
 

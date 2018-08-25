@@ -74,12 +74,12 @@ $active_group = 'default';
 $query_builder = TRUE;
 
 $db['default'] = array(
-	'dsn'	=> 'sqlite:'.APPPATH.'sqlitedb/sqliteci.db',
-	'hostname' => '',
-	'username' => '',
+	'dsn'	=> '',
+	'hostname' => 'localhost',
+	'username' => 'root',
 	'password' => '',
-	'database' => '',
-	'dbdriver' => 'pdo',
+	'database' => 'votingsys',
+	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
 	'db_debug' => (ENVIRONMENT !== 'production'),

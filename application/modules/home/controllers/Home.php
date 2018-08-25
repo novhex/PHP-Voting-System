@@ -134,7 +134,7 @@ class Home extends CI_Controller {
 
 		if($this->input->method()=="post"){
 
-			if(sizeof($this->input->post('cb_senators'))==0){
+			if($this->input->post('cb_senators')===NULL){
 
 				$this->form_validation->set_message('cb_senatorvalidator','You must select at least 1 senator');
 
@@ -157,7 +157,7 @@ class Home extends CI_Controller {
 
 		if($this->input->method()=="post"){
 
-			if(sizeof($this->input->post('radio_pres'))===0){
+			if($this->input->post('radio_pres') === NULL){
 				$this->form_validation->set_message('rb_presidentvalidator','You must select a president to vote.');
 				return FALSE;
 			}else{
@@ -178,7 +178,7 @@ class Home extends CI_Controller {
 
 		if($this->input->method()=="post"){
 
-			if(sizeof($this->input->post('radio_vppres'))===0){
+			if($this->input->post('radio_vppres') === NULL){
 				$this->form_validation->set_message('rb_vp_presidentvalidator','You must select a vice president to vote.');
 				return FALSE;
 			}else{
